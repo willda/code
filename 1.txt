@@ -1,2 +1,4 @@
 print ("one")
 print ("hello")
+print
+print
