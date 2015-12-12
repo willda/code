@@ -11,21 +11,14 @@ namespace Snake
         static void Main(string[] args)
         {
 
-            point p1 = new point(1, 3, '*');
-            p1.Draw();
+            Console.SetBufferSize(80, 25);
 
-            point p2 = new point(3, 4, '#');
-            p2.Draw();
 
-            HorizontalLine line = new HorizontalLine(5, 10, 8, '+');
-
-            VerticaleLine line1 = new VerticaleLine(1, 5, 10, '+');
-
-            line.Draw();
-            line1.Draw();
-
-            Console.ReadLine();
-        }
+            point p = new point(4, 5, '*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Drow();
+            
+         }
    
     }
 }
