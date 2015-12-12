@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,10 +8,11 @@ namespace Snake
 {
     class Figure
     {
-        protected List<point> plist;
-        public void Draw()
+        protected List<point> pList;
+
+        public void Drow()
         {
-            foreach (point p in plist)
+            foreach (point p in pList)
             {
                 p.Draw();
             }
